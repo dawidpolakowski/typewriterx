@@ -1,0 +1,22 @@
+{
+  "name": "typewriterx",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawidpolakowski/typewriterx.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dawidpolakowski/typewriterx/issues"
+  },
+  "homepage": "https://github.com/dawidpolakowski/typewriterx#readme"
+}
