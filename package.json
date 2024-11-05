@@ -1,8 +1,8 @@
 {
   "name": "typewriterx",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A minimalist, open-source writing app designed for Linux, Mac, and Windows, allowing you to focus solely on writing.",
+  "main": "main.js",
   "directories": {
     "doc": "docs"
   },
@@ -11,12 +11,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dawidpolakowski/typewriterx.git"
+    "url": "git+https://github.com/hexforest/typewriterx.git"
   },
-  "author": "",
-  "license": "GPL-3.0",
+  "keywords": [
+    "typewriter",
+    "typewriterx",
+    "writer"
+  ],
+  "author": "hexforest",
+  "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/dawidpolakowski/typewriterx/issues"
+    "url": "https://github.com/hexforest/typewriterx/issues"
   },
-  "homepage": "https://github.com/dawidpolakowski/typewriterx#readme"
+  "homepage": "https://github.com/hexforest/typewriterx#readme"
 }
