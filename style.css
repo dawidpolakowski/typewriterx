@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  textarea {
+    height: 200px;
+    width: 90%;
+    display: none;
+    background-color: black;
+    color: white; 
+    text-align: left;
+    border: 0 solid goldenrod;
+
+  }
+  #file-path {
+    background-color: black;
+    color: goldenrod; 
+    text-align: left;
+    border: 1 solid goldenrod;
+  }
