@@ -5,13 +5,12 @@ body {
   }
   
   textarea {
-    height: 200px;
-    width: 90%;
+
     display: none;
-    background-color: black;
+    background-color: gray;
     color: white; 
     text-align: left;
-    border: 0 solid goldenrod;
+    border: 2 solid red;
 
   }
   #file-path {

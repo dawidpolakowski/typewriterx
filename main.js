@@ -1,13 +1,13 @@
-const { app, BrowserWindow, Menu } = require("electron");
+const { app, BrowserWindow, Menu, Tray } = require("electron");
 const { dialog } = require("electron");
 const fs = require("fs");
-const path = require('node:path')
+const path = require('node:path');
+const { type } = require("os");
 
 let win;
 
 const template = [
   {
-    // label: "Ctrl+S to save",
     label: "File",
     submenu: [
       {
@@ -36,6 +36,17 @@ const template = [
           saveFileItem.enabled = true;
         },
       },
+      {
+        type: 'separator'
+      },
+      {
+        id: "Quit",
+        accelerator: "Ctrl+q",
+        label: "Quit",
+        click: async () => {
+          app.quit();
+        },
+      },
     ],
   },
 ];
@@ -51,11 +62,12 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false
     },
+    icon: path.join('src','typewriterx_icon.png')
   });
 
   win.loadFile("index.html");
 
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   app.on("window-all-closed", () => {
     if (process.platform !== "darwin") {
@@ -66,6 +78,7 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow()
+  new Tray(path.join('src','typewriterx_icon.png'))
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
