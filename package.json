@@ -1,6 +1,6 @@
 {
   "name": "typewriterx",
-  "version": "1.0.0",
+  "version": "BETA.0.0.6",
   "description": "A minimalist, open-source writing app designed for Linux, Mac, and Windows, allowing you to focus solely on writing.",
   "main": "main.js",
   "directories": {

@@ -78,8 +78,14 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow()
-  new Tray(path.join('src','typewriterx_icon.png'))
-
+  const tray = new Tray(path.join('src','typewriterx_icon.png'))
+  const trayMenu = Menu.buildFromTemplate([
+    {
+      label: 'About'
+    }
+  ]) 
+  tray.setContextMenu(trayMenu)
+  tray.setToolTip('typewriterx')
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
