@@ -4,13 +4,14 @@ body {
     text-align: center;
   }
   
-  textarea {
-
+  #code {
+width: 900px;
+height: 900px;
     display: none;
     background-color: gray;
     color: white; 
     text-align: left;
-    border: 2 solid red;
+    border: 1 solid red;
 
   }
   #file-path {
