@@ -1,22 +1,35 @@
 body {
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  #code {
-width: 900px;
-height: 900px;
-    display: none;
-    background-color: gray;
-    color: white; 
-    text-align: left;
-    border: 1 solid red;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
 
-  }
-  #file-path {
-    background-color: black;
-    color: goldenrod; 
-    text-align: left;
-    border: 1 solid goldenrod;
-  }
+#top-bar {
+  width: 100%;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  background-color: grey;
+
+}
+
+#code {
+  width: 900px;
+  height: 600px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.101);
+  color: white;
+  text-align: left;
+  border: 0 solid rgb(0, 0, 0);
+
+}
+
+#file-path {
+  text-align: left;
+  width: 100%;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+}
